@@ -17,9 +17,9 @@ const Products = () => {
     fetchProducts();
   }, []);
 
-  useEffect(() => {
-    console.log("ELEMENT RENDERED");
-  }, []);
+  const myFunc = () => {
+    console.log("MY FUNC");
+  };
   return (
     <>
       {productList.map((product) => {
