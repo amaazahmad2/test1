@@ -13,20 +13,13 @@ const Products = () => {
     }
   };
 
-  const fetchProductsAgain = () => {
-    axios
-      .get("https://fakestoreapi.com/products")
-      .then((resp) => {
-        console.log(resp);
-      })
-      .catch((e) => {
-        console.log(e);
-      });
-  };
-
   useEffect(() => {
     fetchProducts();
   }, []);
+
+  const myFunc = () => {
+    console.log("MY FUNC");
+  };
   return (
     <>
       {productList.map((product) => {
