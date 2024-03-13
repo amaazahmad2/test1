@@ -16,6 +16,10 @@ const Products = () => {
   useEffect(() => {
     fetchProducts();
   }, []);
+
+  useEffect(() => {
+    console.log("ELEMENT RENDERED");
+  }, []);
   return (
     <>
       {productList.map((product) => {
